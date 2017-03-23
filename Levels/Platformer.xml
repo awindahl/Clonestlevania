@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="15" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://Assets/Scripts/player_brain.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://Assets/Sprites/Static/whip.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://icon.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://Assets/Sprites/Static/ground.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://Assets/Scripts/Ramp.gd" type="Script" index="5"></ext_resource>
+	<ext_resource path="res://Assets/Scripts/platform_collision.gd" type="Script" index="6"></ext_resource>
+	<ext_resource path="res://Assets/Scripts/pickup_item1.gd" type="Script" index="7"></ext_resource>
+	<ext_resource path="res://Assets/Scripts/ground.gd" type="Script" index="3"></ext_resource>
+	<ext_resource path="res://Assets/Scripts/statusplayer.gd" type="Script" index="8"></ext_resource>
+	<resource type="RectangleShape2D" path="local://4">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 10, 10 </vector2>
+
+	</resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 32, 34 </vector2>
+
+	</resource>
+	<resource type="SegmentShape2D" path="local://5">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="a"> -0.32637, 0.393921 </vector2>
+		<vector2 name="b"> -0.367668, 9.66296 </vector2>
+
+	</resource>
+	<resource type="RectangleShape2D" path="local://3">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 10, 10 </vector2>
+
+	</resource>
+	<resource type="RectangleShape2D" path="local://6">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 10, 10 </vector2>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="133">
+				<string> "Node2D" </string>
+				<string> "transform/pos" </string>
+				<string> "Player" </string>
+				<string> "editor/display_folded" </string>
+				<string> "transform/scale" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "gravity_scale" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "sleeping" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "damp_override/linear" </string>
+				<string> "damp_override/angular" </string>
+				<string> "script/script" </string>
+				<string> "RigidBody2D" </string>
+				<string> "Sprite" </string>
+				<string> "z/z" </string>
+				<string> "texture" </string>
+				<string> "__meta__" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "foot1" </string>
+				<string> "enabled" </string>
+				<string> "cast_to" </string>
+				<string> "layer_mask" </string>
+				<string> "type_mask" </string>
+				<string> "RayCast2D" </string>
+				<string> "foot2" </string>
+				<string> "foot3" </string>
+				<string> "head1" </string>
+				<string> "transform/rot" </string>
+				<string> "head2" </string>
+				<string> "body_r" </string>
+				<string> "body_l" </string>
+				<string> "Camera2D" </string>
+				<string> "anchor_mode" </string>
+				<string> "rotating" </string>
+				<string> "current" </string>
+				<string> "zoom" </string>
+				<string> "limit/left" </string>
+				<string> "limit/top" </string>
+				<string> "limit/right" </string>
+				<string> "limit/bottom" </string>
+				<string> "drag_margin/h_enabled" </string>
+				<string> "drag_margin/v_enabled" </string>
+				<string> "smoothing/enable" </string>
+				<string> "smoothing/speed" </string>
+				<string> "drag_margin/left" </string>
+				<string> "drag_margin/top" </string>
+				<string> "drag_margin/right" </string>
+				<string> "drag_margin/bottom" </string>
+				<string> "attack" </string>
+				<string> "whip" </string>
+				<string> "visibility/visible" </string>
+				<string> "groundMaster" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "StaticBody2D" </string>
+				<string> "Ground4" </string>
+				<string> "Ground1" </string>
+				<string> "Ground2" </string>
+				<string> "Ground3" </string>
+				<string> "Ground5" </string>
+				<string> "Ramp1" </string>
+				<string> "shapes/1/shape" </string>
+				<string> "shapes/1/transform" </string>
+				<string> "shapes/1/trigger" </string>
+				<string> "CollisionShape2D1" </string>
+				<string> "0" </string>
+				<string> "1" </string>
+				<string> "2" </string>
+				<string> "Ramp2" </string>
+				<string> "Platform" </string>
+				<string> "one_way_collision/max_depth" </string>
+				<string> "3" </string>
+				<string> "4" </string>
+				<string> "5" </string>
+				<string> "6" </string>
+				<string> "7" </string>
+				<string> "Platform1" </string>
+				<string> "Platform2" </string>
+				<string> "coinMaster" </string>
+				<string> "Coin1" </string>
+				<string> "modulate" </string>
+				<string> "Coin7 3" </string>
+				<string> "Coin2" </string>
+				<string> "Coin7 2" </string>
+				<string> "Coin3" </string>
+				<string> "Coin7 4" </string>
+				<string> "Coin4" </string>
+				<string> "Coin7 5" </string>
+				<string> "Coin76" </string>
+				<string> "Coin5" </string>
+				<string> "Coin7 6" </string>
+				<string> "Coin77" </string>
+				<string> "Coin6" </string>
+				<string> "Coin7" </string>
+				<string> "HUD" </string>
+				<string> "layer" </string>
+				<string> "offset" </string>
+				<string> "rotation" </string>
+				<string> "scale" </string>
+				<string> "CanvasLayer" </string>
+				<string> "Panel" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "RichTextLabel" </string>
+				<string> "rect/scale" </string>
+				<string> "size_flags/stretch_ratio" </string>
+				<string> "bbcode/enabled" </string>
+				<string> "bbcode/bbcode" </string>
+				<string> "visible_characters" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 123 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="3183"> 				-1, -1, 0, 0, -1, 1, 1, 0, 0, 0, 0, 27, 2, -1, 25, 3, 1, 1, 2, 4, 3, 5, 4, 6, 5, 7, 6, 8, 4, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 11, 16, 4, 17, 8, 18, 12, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 15, 0, 1, 0, 28, 28, -1, 4, 1, 16, 29, 7, 30, 17, 31, 18, 0, 1, 0, 32, 32, -1, 6, 1, 19, 4, 20, 33, 5, 34, 4, 35, 8, 31, 21, 0, 1, 0, 41, 36, -1, 7, 1, 22, 4, 23, 37, 1, 38, 24, 39, 7, 40, 25, 31, 26, 0, 1, 0, 41, 42, -1, 7, 1, 27, 4, 28, 37, 1, 38, 24, 39, 7, 40, 25, 31, 29, 0, 1, 0, 41, 43, -1, 7, 1, 30, 4, 31, 37, 1, 38, 24, 39, 7, 40, 25, 31, 32, 0, 1, 0, 41, 44, -1, 8, 1, 33, 45, 34, 4, 35, 37, 1, 38, 36, 39, 7, 40, 25, 31, 37, 0, 1, 0, 41, 46, -1, 8, 1, 38, 45, 34, 4, 39, 37, 1, 38, 36, 39, 7, 40, 25, 31, 40, 0, 1, 0, 41, 47, -1, 8, 1, 41, 45, 42, 4, 43, 37, 1, 38, 36, 39, 7, 40, 25, 31, 44, 0, 1, 0, 41, 48, -1, 8, 1, 45, 45, 46, 4, 47, 37, 1, 38, 36, 39, 7, 40, 25, 31, 48, 0, 1, 0, 49, 49, -1, 18, 1, 49, 4, 50, 50, 7, 51, 1, 52, 1, 53, 51, 54, 52, 55, 53, 56, 54, 57, 54, 58, 1, 59, 1, 60, 4, 61, 55, 62, 56, 63, 56, 64, 56, 65, 57, 0, 1, 0, 41, 66, -1, 9, 1, 58, 45, 59, 4, 60, 29, 7, 37, 4, 38, 61, 39, 7, 40, 25, 31, 62, 0, 12, 0, 28, 67, -1, 5, 68, 4, 1, 63, 45, 59, 4, 64, 30, 65, 0, 0, 0, 72, 69, -1, 11, 3, 1, 1, 66, 4, 67, 5, 4, 9, 7, 10, 7, 70, 13, 71, 10, 13, 9, 14, 10, 26, 68, 0, 14, 0, 72, 73, -1, 14, 3, 1, 1, 69, 4, 70, 5, 4, 6, 71, 7, 72, 8, 4, 9, 7, 10, 7, 70, 13, 71, 10, 13, 9, 14, 10, 26, 68, 0, 15, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 15, 0, 32, 32, -1, 6, 1, 75, 4, 76, 33, 71, 34, 4, 35, 8, 31, 77, 0, 14, 0, 72, 74, -1, 14, 3, 1, 1, 78, 4, 79, 5, 4, 6, 71, 7, 80, 8, 4, 9, 7, 10, 7, 70, 13, 71, 10, 13, 9, 14, 10, 26, 68, 0, 18, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 18, 0, 32, 32, -1, 6, 1, 81, 4, 82, 33, 71, 34, 4, 35, 8, 31, 83, 0, 14, 0, 72, 75, -1, 14, 3, 1, 1, 84, 4, 85, 5, 4, 6, 71, 7, 80, 8, 4, 9, 7, 10, 7, 70, 13, 71, 10, 13, 9, 14, 10, 26, 68, 0, 21, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 21, 0, 32, 32, -1, 6, 1, 81, 4, 82, 33, 71, 34, 4, 35, 8, 31, 83, 0, 14, 0, 72, 76, -1, 14, 3, 1, 1, 86, 4, 87, 5, 4, 6, 71, 7, 72, 8, 4, 9, 7, 10, 7, 70, 13, 71, 10, 13, 9, 14, 10, 26, 68, 0, 24, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 24, 0, 32, 32, -1, 6, 1, 75, 4, 76, 33, 71, 34, 4, 35, 8, 31, 77, 0, 14, 0, 72, 77, -1, 14, 3, 1, 1, 88, 4, 70, 5, 4, 6, 71, 7, 72, 8, 4, 9, 7, 10, 7, 70, 13, 71, 10, 13, 9, 14, 10, 26, 68, 0, 27, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 27, 0, 32, 32, -1, 6, 1, 75, 4, 76, 33, 71, 34, 4, 35, 8, 31, 77, 0, 0, 0, 72, 78, -1, 19, 3, 1, 1, 89, 45, 90, 4, 91, 29, 92, 5, 4, 6, 71, 7, 93, 8, 4, 79, 94, 80, 95, 81, 4, 9, 96, 10, 96, 70, 13, 71, 10, 13, 9, 14, 10, 26, 97, 0, 30, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 30, 0, 32, 32, -1, 6, 1, 98, 4, 99, 33, 71, 34, 4, 35, 8, 31, 100, 0, 30, 0, 32, 82, -1, 6, 1, 101, 45, 102, 4, 103, 33, 94, 34, 4, 35, 7, 0, 30, 0, 41, 83, -1, 8, 1, 104, 45, 105, 4, 106, 37, 1, 38, 36, 39, 7, 40, 25, 31, 107, 0, 30, 0, 41, 84, -1, 8, 1, 108, 45, 109, 4, 110, 37, 1, 38, 36, 39, 7, 40, 25, 31, 111, 0, 30, 0, 41, 85, -1, 8, 1, 112, 45, 113, 4, 114, 37, 1, 38, 36, 39, 7, 40, 25, 31, 115, 0, 0, 0, 72, 86, -1, 19, 3, 1, 1, 116, 45, 90, 4, 117, 29, 92, 5, 4, 6, 71, 7, 93, 8, 4, 79, 94, 80, 95, 81, 4, 9, 96, 10, 96, 70, 13, 71, 10, 13, 9, 14, 10, 26, 97, 0, 37, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 37, 0, 32, 32, -1, 6, 1, 98, 4, 99, 33, 71, 34, 4, 35, 8, 31, 100, 0, 37, 0, 32, 82, -1, 6, 1, 101, 45, 102, 4, 103, 33, 94, 34, 4, 35, 7, 0, 37, 0, 41, 83, -1, 8, 1, 104, 45, 105, 4, 106, 37, 1, 38, 36, 39, 7, 40, 25, 31, 107, 0, 37, 0, 41, 84, -1, 8, 1, 108, 45, 109, 4, 110, 37, 1, 38, 36, 39, 7, 40, 25, 31, 111, 0, 37, 0, 41, 85, -1, 8, 1, 112, 45, 113, 4, 114, 37, 1, 38, 36, 39, 7, 40, 25, 31, 115, 0, 0, 0, 72, 87, -1, 16, 3, 1, 1, 118, 4, 119, 29, 92, 5, 4, 6, 120, 7, 121, 8, 4, 9, 7, 10, 7, 88, 122, 70, 13, 71, 10, 13, 9, 14, 10, 26, 123, 0, 44, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 44, 0, 32, 32, -1, 6, 1, 124, 4, 125, 33, 120, 34, 4, 35, 8, 31, 126, 0, 44, 0, 41, 83, -1, 7, 1, 127, 4, 128, 37, 1, 38, 129, 39, 7, 40, 130, 31, 131, 0, 44, 0, 41, 84, -1, 7, 1, 132, 4, 133, 37, 1, 38, 129, 39, 7, 40, 130, 31, 134, 0, 44, 0, 41, 85, -1, 8, 1, 135, 45, 136, 4, 137, 37, 1, 38, 129, 39, 7, 40, 130, 31, 138, 0, 44, 0, 41, 89, -1, 8, 1, 139, 45, 140, 4, 141, 37, 1, 38, 129, 39, 7, 40, 130, 31, 142, 0, 44, 0, 41, 90, -1, 8, 1, 143, 45, 46, 4, 144, 37, 1, 38, 36, 39, 7, 40, 130, 31, 145, 0, 44, 0, 41, 91, -1, 8, 1, 146, 45, 59, 4, 144, 37, 1, 38, 36, 39, 7, 40, 130, 31, 147, 0, 44, 0, 41, 92, -1, 7, 1, 148, 4, 149, 37, 1, 38, 129, 39, 7, 40, 130, 31, 150, 0, 44, 0, 41, 93, -1, 7, 1, 151, 4, 152, 37, 1, 38, 129, 39, 7, 40, 130, 31, 153, 0, 0, 0, 72, 94, -1, 16, 3, 1, 1, 154, 4, 119, 29, 92, 5, 4, 6, 120, 7, 121, 8, 4, 9, 7, 10, 7, 88, 122, 70, 13, 71, 10, 13, 9, 14, 10, 26, 123, 0, 55, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 55, 0, 32, 32, -1, 6, 1, 124, 4, 125, 33, 120, 34, 4, 35, 8, 31, 126, 0, 55, 0, 41, 83, -1, 7, 1, 127, 4, 128, 37, 1, 38, 129, 39, 7, 40, 130, 31, 131, 0, 55, 0, 41, 84, -1, 7, 1, 132, 4, 133, 37, 1, 38, 129, 39, 7, 40, 130, 31, 134, 0, 55, 0, 41, 85, -1, 8, 1, 135, 45, 136, 4, 137, 37, 1, 38, 129, 39, 7, 40, 130, 31, 138, 0, 55, 0, 41, 89, -1, 8, 1, 139, 45, 140, 4, 141, 37, 1, 38, 129, 39, 7, 40, 130, 31, 142, 0, 55, 0, 41, 90, -1, 8, 1, 143, 45, 46, 4, 144, 37, 1, 38, 36, 39, 7, 40, 130, 31, 145, 0, 55, 0, 41, 91, -1, 8, 1, 146, 45, 59, 4, 144, 37, 1, 38, 36, 39, 7, 40, 130, 31, 147, 0, 55, 0, 41, 92, -1, 7, 1, 148, 4, 149, 37, 1, 38, 129, 39, 7, 40, 130, 31, 150, 0, 55, 0, 41, 93, -1, 7, 1, 151, 4, 152, 37, 1, 38, 129, 39, 7, 40, 130, 31, 153, 0, 0, 0, 72, 95, -1, 16, 3, 1, 1, 155, 4, 119, 29, 92, 5, 4, 6, 120, 7, 121, 8, 4, 9, 7, 10, 7, 88, 122, 70, 13, 71, 10, 13, 9, 14, 10, 26, 123, 0, 66, 0, 28, 28, -1, 2, 30, 73, 31, 74, 0, 66, 0, 32, 32, -1, 6, 1, 124, 4, 125, 33, 120, 34, 4, 35, 8, 31, 126, 0, 66, 0, 41, 83, -1, 7, 1, 127, 4, 128, 37, 1, 38, 129, 39, 7, 40, 130, 31, 131, 0, 66, 0, 41, 84, -1, 7, 1, 132, 4, 133, 37, 1, 38, 129, 39, 7, 40, 130, 31, 134, 0, 66, 0, 41, 85, -1, 8, 1, 135, 45, 136, 4, 137, 37, 1, 38, 129, 39, 7, 40, 130, 31, 138, 0, 66, 0, 41, 89, -1, 8, 1, 139, 45, 140, 4, 141, 37, 1, 38, 129, 39, 7, 40, 130, 31, 142, 0, 66, 0, 41, 90, -1, 8, 1, 143, 45, 46, 4, 144, 37, 1, 38, 36, 39, 7, 40, 130, 31, 145, 0, 66, 0, 41, 91, -1, 8, 1, 146, 45, 59, 4, 144, 37, 1, 38, 36, 39, 7, 40, 130, 31, 147, 0, 66, 0, 41, 92, -1, 7, 1, 148, 4, 149, 37, 1, 38, 129, 39, 7, 40, 130, 31, 150, 0, 66, 0, 41, 93, -1, 7, 1, 151, 4, 152, 37, 1, 38, 129, 39, 7, 40, 130, 31, 153, 0, 0, 0, 27, 96, -1, 22, 3, 1, 1, 156, 4, 157, 5, 4, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 77, 0, 27, 97, -1, 25, 3, 1, 1, 159, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 78, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 78, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 99, -1, 25, 3, 1, 1, 169, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 81, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 81, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 100, -1, 25, 3, 1, 1, 170, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 84, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 84, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 101, -1, 25, 3, 1, 1, 171, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 87, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 87, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 102, -1, 25, 3, 1, 1, 172, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 90, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 90, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 103, -1, 25, 3, 1, 1, 173, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 93, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 93, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 104, -1, 25, 3, 1, 1, 174, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 96, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 96, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 105, -1, 25, 3, 1, 1, 175, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 99, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 99, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 106, -1, 25, 3, 1, 1, 176, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 102, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 102, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 107, -1, 25, 3, 1, 1, 177, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 105, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 105, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 108, -1, 25, 3, 1, 1, 178, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 108, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 108, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 109, -1, 25, 3, 1, 1, 179, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 111, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 111, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 110, -1, 25, 3, 1, 1, 180, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 114, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 114, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 77, 0, 27, 111, -1, 25, 3, 1, 1, 181, 4, 160, 5, 4, 6, 161, 7, 162, 8, 1, 9, 7, 10, 7, 11, 8, 12, 9, 13, 9, 14, 10, 15, 9, 16, 4, 17, 8, 18, 7, 19, 1, 20, 4, 21, 1, 22, 13, 23, 10, 24, 14, 25, 14, 26, 158, 0, 117, 0, 28, 28, -1, 5, 1, 163, 4, 160, 30, 17, 98, 164, 31, 165, 0, 117, 0, 32, 32, -1, 6, 1, 166, 4, 167, 33, 161, 34, 1, 35, 8, 31, 168, 0, 0, 0, 117, 112, -1, 5, 3, 1, 113, 7, 114, 13, 115, 10, 116, 51, 0, 120, 0, 118, 118, -1, 8, 119, 4, 120, 1, 121, 96, 122, 96, 123, 182, 124, 183, 125, 184, 126, 185, 0, 121, 0, 127, 127, -1, 14, 128, 186, 119, 4, 120, 1, 121, 96, 122, 96, 129, 122, 123, 10, 124, 10, 125, 187, 126, 59, 130, 4, 131, 188, 132, 92, 26, 189, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="190" shared="false">
+				<vector2> 548.34, 372.727 </vector2>
+				<bool> True </bool>
+				<vector2> -44.3886, 109.263 </vector2>
+				<vector2> -1, 1 </vector2>
+				<bool> False </bool>
+				<resource  resource_type="Shape2D" path="local://4">  </resource>
+				<matrix32> 3.20107, -0, 0, 3.20237, -7.50801, -7.0561 </matrix32>
+				<int> 1 </int>
+				<int> 0 </int>
+				<real> 1 </real>
+				<real> 0 </real>
+				<real> 9 </real>
+				<int> 3 </int>
+				<vector2> 0, 0 </vector2>
+				<real> -1 </real>
+				<resource  external="0">  </resource>
+				<vector2> -7.45619, -7.06409 </vector2>
+				<resource  external="1">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -7.50801, -7.0561 </vector2>
+				<vector2> 3.20107, 3.20237 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -35.6973, 20.6999 </vector2>
+				<vector2> 0.235084, 0.12556 </vector2>
+				<vector2> 0, 100 </vector2>
+				<int> 15 </int>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 22.0676, 20.7899 </vector2>
+				<vector2> 0.235084, 0.123234 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -5.72029, 20.9969 </vector2>
+				<vector2> 0.235084, 0.122231 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -27.5903, -34.548 </vector2>
+				<real> -179.999985 </real>
+				<vector2> 0.225693, 0.232994 </vector2>
+				<vector2> 0, 50 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 11.8428, -35.4341 </vector2>
+				<vector2> 0.250731, 0.225636 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 5.39469, 6.24789 </vector2>
+				<real> 90.01915 </real>
+				<vector2> 0.687492, 0.597664 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -19.5025, 6.84884 </vector2>
+				<real> -90 </real>
+				<vector2> 0.687492, 0.623971 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -5.37189, -201.305 </vector2>
+				<vector2> 1.58714, 1.30408 </vector2>
+				<vector2> 1, 1 </vector2>
+				<int> -1000000 </int>
+				<int> -10000000 </int>
+				<int> 10000000 </int>
+				<real> 18.190001 </real>
+				<real> 0.1 </real>
+				<real> 0.28 </real>
+				<vector2> -7.47176, -7.34219 </vector2>
+				<real> 90 </real>
+				<vector2> 0.99336, 0.996542 </vector2>
+				<vector2> 0, 150 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 4.00283e-06, 91.574 </vector2>
+				<vector2> 2.38296, 1 </vector2>
+				<resource  external="2">  </resource>
+				<vector2> 603.522, 171.955 </vector2>
+				<vector2> 5.36137, 1 </vector2>
+				<resource  external="3">  </resource>
+				<vector2> 144.33, -582.422 </vector2>
+				<vector2> 0.0547946, 7.04621 </vector2>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 4.99631, -0, 0, 1.07586, 0.13213, -0.159619 </matrix32>
+				<resource  external="4">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0.13213, -0.159619 </vector2>
+				<vector2> 4.99631, 1.07586 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 109.356, -289.759 </vector2>
+				<vector2> 0.274659, 1 </vector2>
+				<matrix32> 4.98407, -0, 0, 1.07213, -0.296417, -0.0216613 </matrix32>
+				<vector2> -0.296417, -0.0216613 </vector2>
+				<vector2> 4.98407, 1.07213 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -72.1663, 0.182739 </vector2>
+				<vector2> 0.521001, 1 </vector2>
+				<vector2> -183.653, -220.563 </vector2>
+				<vector2> 0.186519, 7.04621 </vector2>
+				<vector2> 98.7337, -678.638 </vector2>
+				<vector2> 355.382, 53.9973 </vector2>
+				<real> 30 </real>
+				<vector2> 1.30577, 0.666477 </vector2>
+				<int> -1 </int>
+				<matrix32> 4.6162, -0, 0, 0.598917, -13.172, 17.4872 </matrix32>
+				<resource  resource_type="Shape2D" path="local://5">  </resource>
+				<matrix32> 2.79415, -2.52471, 2.47814, 2.74262, 134.412, -3.79343 </matrix32>
+				<int> 2 </int>
+				<resource  external="5">  </resource>
+				<vector2> -13.172, 17.4872 </vector2>
+				<vector2> 4.6162, 0.598917 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 134.412, -3.79343 </vector2>
+				<real> 42.099998 </real>
+				<vector2> 3.76583, 3.69637 </vector2>
+				<vector2> 157.21, 22.5705 </vector2>
+				<real> 162.852203 </real>
+				<vector2> 0.138368, 0.249258 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -156.668, -36.2032 </vector2>
+				<real> 161.725677 </real>
+				<vector2> 0.0118029, 0.0194174 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -137.397, -166.517 </vector2>
+				<real> 93.646378 </real>
+				<vector2> 3.20621, 5.82896 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 1415.15, -690.407 </vector2>
+				<vector2> 0.532787, 0.666477 </vector2>
+				<vector2> 625.99, -26.9373 </vector2>
+				<vector2> 0.517703, 0.240931 </vector2>
+				<resource  resource_type="Shape2D" path="local://3">  </resource>
+				<matrix32> 15.9922, -0, 0, 3.66776, -0.0993133, 0.216786 </matrix32>
+				<real> 2 </real>
+				<resource  external="6">  </resource>
+				<vector2> -0.0993133, 0.216786 </vector2>
+				<vector2> 15.9922, 3.66776 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -110.362, -4.33011 </vector2>
+				<vector2> 0.879994, 0.904585 </vector2>
+				<vector2> 0, 75 </vector2>
+				<int> 8 </int>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 113.245, -4.09464 </vector2>
+				<vector2> 0.879994, 0.922472 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -145.531, 2.45905 </vector2>
+				<real> -28 </real>
+				<vector2> 0.879994, 0.929475 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 144.683, 5.63737 </vector2>
+				<real> 27.980013 </real>
+				<vector2> 0.879994, 0.861729 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -154.857, 3.91049 </vector2>
+				<vector2> 0.879994, 1.16228 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 156.153, 0.610321 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -40.9912, -5.80494 </vector2>
+				<vector2> 0.879994, 0.949764 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 31.7709, -4.54144 </vector2>
+				<vector2> 0.879994, 0.926818 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 787.472, -64.5002 </vector2>
+				<vector2> 963.083, -110.273 </vector2>
+				<vector2> 107.163, 90.8337 </vector2>
+				<vector2> 0.564768, 0.564768 </vector2>
+				<resource  external="7">  </resource>
+				<vector2> 376.322, -101.42 </vector2>
+				<vector2> 1, 1 </vector2>
+				<resource  resource_type="Shape2D" path="local://6">  </resource>
+				<matrix32> 1.49766, -0, 0, 3.23567, -4.36574, 5.15058 </matrix32>
+				<vector2> -8.69587, 6.52161 </vector2>
+				<color> 1, 0.960938, 0, 1 </color>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -4.36574, 5.15058 </vector2>
+				<vector2> 1.49766, 3.23567 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 556.717, -222.669 </vector2>
+				<vector2> 763.321, -285.578 </vector2>
+				<vector2> 937.801, -297.407 </vector2>
+				<vector2> 747.307, 21.3516 </vector2>
+				<vector2> 921.787, 9.52252 </vector2>
+				<vector2> 1564.01, -528.453 </vector2>
+				<vector2> 2093.36, -682.232 </vector2>
+				<vector2> 2087.45, -1066.68 </vector2>
+				<vector2> 2458.11, -1534.65 </vector2>
+				<vector2> 1967.2, -863.344 </vector2>
+				<vector2> 1961.28, -1247.79 </vector2>
+				<vector2> -361.692, -255.852 </vector2>
+				<vector2> 546.196, 22.1339 </vector2>
+				<real> 770 </real>
+				<real> 47 </real>
+				<real> 1005 </real>
+				<real> 139 </real>
+				<vector2> 2, 2 </vector2>
+				<real> 237 </real>
+				<string> "" </string>
+				<resource  external="8">  </resource>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
