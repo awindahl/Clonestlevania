@@ -53,6 +53,10 @@ func _ready():
 	set_mode(2)
 	
 func _on_body_enter (other):
+	if other.get_meta("Type") == "Enemy":
+		Global.health -=1
+		set_axis_velocity(Vector2(-move_speed,jump_height))
+	
 	if other.get_meta("Type") == "Coin":
 		Global.coinFlag = true
 		other.free()
@@ -64,6 +68,11 @@ func _process(delta):
 	body_r_check = 0
 	body_l_check = 0
 	veloc_const = 0
+	
+	if Global.health == 0:
+		Global.coinCount = 0
+		Global.health = 3
+		get_tree().reload_current_scene()
 	
 	if cur_veloc.y == no_veloc.y:
 		veloc_const = 1
