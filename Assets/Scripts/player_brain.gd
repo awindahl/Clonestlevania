@@ -54,7 +54,7 @@ func _ready():
 	
 func _on_body_enter (other):
 	if other.get_meta("Type") == "Enemy" && Global.invTimer == 0:
-		Global.health -=1
+		Global.health -= 1
 		Global.invTimer = 85
 		set_axis_velocity(Vector2(-move_speed,jump_height))
 	
