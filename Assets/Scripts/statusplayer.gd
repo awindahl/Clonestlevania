@@ -6,6 +6,8 @@ var temp
 func _ready():
 	
 	add_text("Coins: ")
+	temp = str (Global.coinCount)
+	add_text(temp)
 	set_process(true)
 	
 	
