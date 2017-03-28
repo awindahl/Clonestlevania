@@ -53,8 +53,9 @@ func _ready():
 	set_mode(2)
 	
 func _on_body_enter (other):
-	if other.get_meta("Type") == "Enemy":
+	if other.get_meta("Type") == "Enemy" && Global.invTimer == 0:
 		Global.health -=1
+		Global.invTimer = 50
 		set_axis_velocity(Vector2(-move_speed,jump_height))
 	
 	if other.get_meta("Type") == "Coin":
@@ -62,6 +63,9 @@ func _on_body_enter (other):
 		other.free()
 	
 func _process(delta):
+	if Global.invTimer > 0:
+		Global.invTimer -= 1
+	print (Global.invTimer)
 	cur_veloc = get_linear_velocity()
 	foot_val = 0
 	ramp_val = 0
