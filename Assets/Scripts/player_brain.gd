@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 var angle_tolerance = 45
+var temp
 var attack_val = 0
 var attack_wait = 0
 var ramp_val
@@ -53,11 +54,14 @@ func _ready():
 	set_mode(2)
 	
 func _on_body_enter (other):
+	
+	cur_veloc = get_angular_velocity()
+	
 	if other.get_meta("Type") == "Enemy" && Global.invTimer == 0:
 		Global.health -= 1
 		Global.invTimer = 85
 		Global.hitFlag = true
-		set_axis_velocity(Vector2(-move_speed,jump_height))
+		set_axis_velocity(Vector2(-cur_veloc,jump_height))
 	
 	if other.get_meta("Type") == "Coin":
 		Global.coinFlag = true
