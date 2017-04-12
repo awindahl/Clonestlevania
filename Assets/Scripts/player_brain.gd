@@ -143,12 +143,8 @@ func _process(delta):
 		attack_wait = 20
 		attack.set_enabled(true)
 		attack_val = 35
-		#print ("attacking")
 		whip.set_hidden(false)
 		
-	if attack.is_colliding():
-		1+1
-		#print("hitting")
 	
 	if Input.is_key_pressed(81):
 		get_tree().quit()
